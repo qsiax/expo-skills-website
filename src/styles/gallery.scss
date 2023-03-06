@@ -1,0 +1,148 @@
+.gallery {
+
+    &__container {
+    }
+
+    &__body {
+        margin-bottom: $m-section;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        * {
+            font-family: $font;
+        }
+    }
+
+    &__title {
+        color: $primary-color;
+        margin-bottom: 25px;
+        font-family: $main-font;
+    }
+
+    &__head {
+        display: flex;
+        margin-bottom: 72px;
+    }
+
+    &__head-item {
+        position: relative;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        color: $text-secondary;
+        margin-right: 50px;
+        cursor: pointer;
+        transition: .5s ease;
+        &:last-child {
+            margin-right: 0;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            width: 0%;
+            bottom: -4px;
+            right: 0;
+            height: 1px;
+            background: $primary-color;
+            transition: .3s ease;
+        }
+
+        &:hover {
+            color: $text;
+        }
+
+        &.active {
+            color: $text;
+
+            &::before {
+                right: auto;
+                width: 100%;
+                left: 0;
+            }
+        }
+    }
+
+    &__item-content {
+        position: relative;
+        height: 245px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 72px;
+    }
+
+    &__item-wrapper {
+        display: flex;
+        visibility: 0;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        transform: translateX(100%);
+        transition: .8s ease;
+        width: 100%;
+        &.active {
+            visibility: 1;
+            opacity: 1;  
+            transform: translateX(0%);
+        }
+    }
+
+    &__item-track {
+        display: flex;
+        position: relative;
+        left: 0;
+        top: 0;
+        animation: galleryAnimate 50s linear infinite;
+    }
+
+    &__item {
+        width: 478px;
+        height: 245px;
+        border-radius: $border-r;
+        margin-right: 25px;
+        position: relative;
+        overflow: hidden;
+        &:last-child {
+            margin-right: 0;
+        }
+
+        img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__text {
+        max-width: 1345px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        color: $text-secondary;
+    }
+
+    &__item-error {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 100px;
+        font-size: 24px;
+        text-align: center;
+        color: $text-secondary;
+    }
+}
+
+@keyframes galleryAnimate {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

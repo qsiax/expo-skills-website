@@ -1,0 +1,210 @@
+.contact {
+
+    &__container {
+        max-width: 1470px;
+        overflow: visible;
+    }
+
+    &__body {
+        margin-bottom: 200px;
+        position: relative;
+        * {
+            font-family: $font;
+        }
+    }
+
+    &__title {
+        margin-bottom: 73px;
+        font-family: $main-font;
+        color: $primary-color;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 36px;
+    }
+
+    &__block {
+        position: relative;
+    }
+
+    &__info-wrapper {
+        background: url(/img/contact-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: $border-r;
+        width: 580px;
+        height: 280px;
+        padding-top: 29px;
+        padding-left: 94px;
+        overflow: hidden;
+    }
+
+    &__info-heading {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 49px;
+        text-transform: uppercase;
+        font-family: $main-font;
+        margin-bottom: 24px;
+        span {
+            color: $primary-color;
+            font-family: $main-font;
+        }
+    }
+
+    &__info-title-wrapper {
+        margin-bottom: 25px;
+        display: flex;
+    }
+
+    &__info-title-icon {
+        font-size: 18px;
+        margin-right: 28px;
+        color: $text-secondary;
+    }
+
+    &__info-title {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: $text-secondary;
+    }
+
+    &__info-social-wrapper {
+        display: flex;
+        margin-left: 111px;
+    }
+
+    &__info-icon-wrapper {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid $primary-color;
+        margin-right: 25px;
+        cursor: pointer;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__info-icon {
+    }
+
+    &__robot {
+        position: absolute;
+        left: -21px;
+        bottom: 0px;
+        background: url(/img/contact-robot.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 169px;
+        height: 205px;
+    }
+
+    
+    &__decore-wrapper {
+
+    }
+
+    &__decore {
+        position: absolute;
+        &.decore-01 {
+            width: 11px;
+            height: 11px;
+            background: url(/img/decore-05.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            bottom: 0;
+            right: 153px;
+        }
+        &.decore-02 {
+            width: 78px;
+            height: 91px;
+            background: url(/img/decore-01.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            bottom: 22px;
+            right: 67px;
+        }
+        &.decore-03 {
+            width: 94px;
+            height: 109px;
+            background: url(/img/decore-02.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            right: 0;
+            bottom: 11px;
+        }
+        &.decore-04 {
+            width: 200px;
+            height: 200px;
+            background: url(/img/decore-03.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            right: -30px;
+            top: -157px;
+        }
+        &.decore-05 {
+            width: 146px;
+            height: 146px;
+            background: url(/img/decore-04.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            right: -102px;
+            top: -126px;
+        }
+        &.decore-06 {
+            width: 22px;
+            height: 22px;
+            background: url(/img/decore-06.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            right: -132px;
+            top: -148px;
+        }
+    }
+
+    &__map {
+        width: 760px;
+        height: 430px;
+        border-radius: $border-r;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    &__map-info {
+        width: 482px;
+        height: 59px;
+        border-top-right-radius: $border-r;
+        border-bottom-left-radius: $border-r;
+        background: $primary-color;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__map-icon {
+
+    }
+
+    &__map-title {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        font-family: $main-font;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        color: $text-secondary;
+    }
+}

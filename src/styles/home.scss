@@ -1,0 +1,154 @@
+.home {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    &__container {
+        width: 100%;
+        padding: 0px 100px;
+        position: relative;
+    }
+
+    &__body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__circle {
+        position: absolute;
+        width: 165px;
+        height: 165px;
+        border-radius: 50%;
+        background: $primary-color;
+        &.circle-01 {
+            left: 18px;
+            top: -83px;
+        }
+        &.circle-02 {
+            right: 6px;
+            bottom: -83px;
+        }
+    }
+
+    &__content-wrapper {
+        width: 100%;
+        background: rgba(115, 124, 132, 0.04);
+        backdrop-filter: blur(84.5px);
+        border-radius: $border-r;
+        transition: .1s ease;
+        cursor: pointer;
+    }
+
+    &__content { 
+        height: 430px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__content-decore {
+        position: absolute;
+        &.decore-01 {
+            width: 175px;
+            height: 200px;
+            background: url(/img/decore-01.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            left: 88px;
+            top: 108px;
+        }
+        &.decore-02 {
+            width: 210px;
+            height: 242px;
+            background: url(/img/decore-02.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            left: 204px;
+            top: 87px;
+        }
+        &.decore-03 {
+            width: 240px;
+            height: 242px;
+            background: url(/img/decore-03.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            right: 175px;
+            bottom: 101px;
+        }
+        &.decore-04 {
+            width: 173px;
+            height: 175px;            
+            background: url(/img/decore-04.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            bottom: 136px;
+            right: 89px;
+        }
+        &.decore-05 {
+            width: 22px;
+            height: 24px;            
+            background: url(/img/decore-05.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            bottom: 71px;
+            left: 44px;
+        }
+        &.decore-06 {
+            width: 25px;
+            height: 25px;            
+            background: url(/img/decore-06.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 95px;
+            right: 53px;
+        }
+    }
+
+    &__content-title {
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 97px;
+        text-transform: uppercase;
+        margin-bottom: 34px;
+        span {
+            color: $primary-color;
+        }
+    }
+
+    &__content-text {
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 48px;
+        text-align: center;
+        font-family: $font;
+        color: $text-secondary;
+    }
+
+    &__btn {
+        position: absolute;
+        bottom: -115px;
+        cursor: pointer;
+        font-family: $font;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        padding: 13px 80px;
+        border-radius: $border-r-btn;
+        background: $primary-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__btn-icon {
+        font-size: 24px;
+        margin-left: 10px;
+    }
+}

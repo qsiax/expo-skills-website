@@ -1,0 +1,162 @@
+.comment {
+
+    &__container {
+    }
+
+    &__body {
+        margin-bottom: $m-section + 317px;
+        * {
+            font-family: $font;
+        }
+    }
+
+    &__title {
+        margin-bottom: 25px;
+        font-family: $main-font;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: $text-secondary;
+        text-align: center;
+        margin-bottom: 74px;
+    }
+
+    &__item-wrapper {
+        display: flex;
+        min-width: 4367px * 2;
+        position: relative;
+    }
+
+    &__item-track {
+        width: 100%;
+        display: flex;
+        animation: courseAnimate 65s linear infinite;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    &__item-block {
+        display: flex;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    &__item {
+        padding-left: 19.5px;
+        padding-right: 19.5px;
+        border: 1px solid $primary-color;
+        border-radius: $border-r;
+        padding-top: 11.5px;
+        padding-bottom: 11.5px;   
+        max-width: 524px; 
+        min-width: 524px; 
+        position: relative;
+        margin-right: 25px;
+        height: auto;
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:nth-child(1) {
+            .comment__item-avatar {
+                background: url(/img/comment-ava-01.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        &:nth-child(2) {
+            .comment__item-avatar {
+                background: url(/img/comment-ava-02.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        &:nth-child(3) {
+            .comment__item-avatar {
+                background-color: hsl(88, 75%, 40%);
+            }
+        }
+        &:nth-child(4) {
+            .comment__item-avatar {
+                background: url(/img/comment-ava-03.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        &:nth-child(5) {
+            .comment__item-avatar {
+                background-color: hsl(1283, 75%, 40%)
+            }
+        }
+        &:nth-child(6) {
+            .comment__item-avatar {
+                background-color: hsl(1297, 75%, 40%)
+            }
+        }
+        &:nth-child(7) {
+            .comment__item-avatar {
+                background-color: hsl(88, 75%, 40%);
+            }
+        }
+        &:nth-child(8) {
+            .comment__item-avatar {
+                background-color: hsl(1297, 75%, 40%)
+            }
+        }
+    }
+
+    &__item-head {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+
+    &__item-avatar {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        margin-right: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+    }
+
+    &__item-name {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    &__item-star {
+        width: 150px;
+        height: 26px;
+        background: url(/img/star.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        right: 19.5px;
+        top: 22.5px;
+    }
+
+    &__item-text {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        color: $text-secondary; 
+    }
+}
+
+@keyframes courseAnimate {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -7234px;
+    }
+}

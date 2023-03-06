@@ -1,0 +1,32 @@
+// color
+$main-color: #18181B;;
+$primary-color: #6366F1;
+$secondary-color: #F4F4F5;
+$text: #FAFAFA;
+$text-secondary: #71717A;;
+
+// settings
+$main-font: "Druk Wide Cyr", sans-serif;
+$font: 'Inter', sans-serif;
+$transition-el: all .5s ease;
+$transition-btn: all 3s ease;
+$border-r: 12px;
+$border-r-btn: 24px;
+$m-section: 300px;
+
+// elements
+.heading {
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 97px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.text {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    color: $text-secondary;
+}
