@@ -1,0 +1,40 @@
+@media (max-width: 400px) {
+    .home {
+        min-height: 0px !important;
+    }
+    .home__container {
+        padding: 0px 16px !important;
+    }
+    .home__circle {
+        display: none;
+    }
+    .home__content {
+        height: 150px !important;
+        margin-top: 15px;
+        background: url(/img/home-bg-mb.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden !important;
+        width: 100%;
+    }
+    .home__content-decore {
+        display: none;
+    }
+    .home__content-title {
+        font-weight: 700 !important;
+        font-size: 24px !important;
+        line-height: 29px !important;
+        margin-bottom: 10px;
+    }
+    .home__content-text {
+        font-weight: 500 !important;
+        font-size: 13px !important;
+        line-height: 16px !important;
+    }
+    .home__btn {
+        display: none !important;
+    }
+    .header {
+        display: none;
+    }
+}
