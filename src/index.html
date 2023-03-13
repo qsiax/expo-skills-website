@@ -51,6 +51,7 @@
 			<div class="home__body">
 				<div class="home__circle circle-01"></div>
 				<div class="home__circle circle-02"></div>
+				<div class="home__title-mb title-mb">главное</div>
 				<div class="home__content-wrapper">
 					<div class="home__content">
 						<div class="home__content-decore decore-01"></div>
@@ -73,225 +74,232 @@
 		<div class="course__container">
 			<div class="course__body">
 				<div class="course__heading heading">Курсы</div>
+				<div class="home__title-mb title-mb">Курсы</div>
 				<div class="course__item-wrapper">
 					<div class="course__item-track">
 						<div class="course__item-content">
 
-							<div class="course__item" onclick="coursePopup01()">
-								<div class="course__item-head">
-									<div class="course__item-head-icon-wrapper">
-										<img src="assets/images/vscode.png" class="course__item-head-icon">
+							<div class="course__item-content-wrapper">
+								<div class="course__item" onclick="coursePopup01()">
+									<div class="course__item-head">
+										<div class="course__item-head-icon-wrapper">
+											<img src="assets/images/vscode.png" class="course__item-head-icon">
+										</div>
+										<div class="course__item-head-title mb-small-title">Веб-разработка</div>
 									</div>
-									<div class="course__item-head-title">Веб-разработка</div>
-								</div>
-								<div class="course__item-text">Разработка сайтов.</div>
-								<div class="course__item-bottom">
-									<div class="course__item-bottom-wrapper">
-										<div class="course__item-bottom-text">Длительность: 48 ч</div>
-										<div class="course__item-bottom-text">Возраст: 13-17 лет</div>
+									<div class="course__item-text">Разработка сайтов.</div>
+									<div class="course__item-bottom">
+										<div class="course__item-bottom-wrapper">
+											<div class="course__item-bottom-text">Длительность: 48 ч</div>
+											<div class="course__item-bottom-text">Возраст: 13-17 лет</div>
+										</div>
+										<div class="course__item-bottom-arrow _icon-arrow"></div>
 									</div>
-									<div class="course__item-bottom-arrow _icon-arrow"></div>
-								</div>
-	
-								<div class="course__item-popup-wrapper" id="popup-01">
-									<div class="course__item-popup">
-										<div class="course__item-popup-info">Подробнее о курсе</div>
-										<div class="course__item-popup-decore"></div>
-										<div class="course__item-popup-block">
-											<div class="course__item-popup-block-title">Стоимость</div>
-											<div class="course__item-popup-block-price">4.000</div>
-											<div class="course__item-popup-block-text">В месяц</div>
-										</div>
-										<div class="course__item-popup-block">
-											<div class="course__item-popup-block-title">Скидки</div>
-											<div class="course__item-popup-block-price">3.600 ₽</div>
-											<div class="course__item-popup-block-text">Многодетным семьям</div>
-										</div>
-										<div class="course__item-popup-block">
-											<div class="course__item-popup-block-title">Программа</div>	
-											<div class="course__item-popup-block-modul"><span>Модуль 1:</span> Введение в курс.</div>
-											<div class="course__item-popup-block-modul"><span>Модуль 2:</span> Основы курса.</div>	
-											<div class="course__item-popup-block-modul"><span>Модуль 3:</span> Окончание курса.</div>								
-										</div>
-										<div class="course__item-popup-logo-wrapper">
-											<img src="assets/images/vscode.png" class="course__item-popup-logo">
-											<div class="course__item-popup-logo-text">Веб-разработка</div>
-										</div>
-									</div>
-								</div>
-							</div>
-	
-							<div class="course__item" onclick="coursePopup02()">
-								<div class="course__item-head">
-									<div class="course__item-head-icon-wrapper">
-										<img src="assets/images/roblox.png" class="course__item-head-icon">
-									</div>
-									<div class="course__item-head-title">Roblox Studio</div>
-								</div>
-								<div class="course__item-text">Разработка игр на Roblox.</div>
-								<div class="course__item-bottom">
-									<div class="course__item-bottom-wrapper">
-										<div class="course__item-bottom-text">Длительность: 48 ч</div>
-										<div class="course__item-bottom-text">Возраст: 7-12 лет</div>
-									</div>
-									<div class="course__item-bottom-arrow _icon-arrow"></div>
-								</div>
-	
-								<div class="course__item-popup-wrapper" id="popup-02">
-									<div class="course__item-popup">
-										<div class="course__item-popup-info">Подробнее о курсе</div>
-										<div class="course__item-popup-decore"></div>
-										<div class="course__item-popup-block">
-											<div class="course__item-popup-block-title">Стоимость</div>
-											<div class="course__item-popup-block-price">4.000</div>
-											<div class="course__item-popup-block-text">В месяц</div>
-										</div>
-										<div class="course__item-popup-block">
-											<div class="course__item-popup-block-title">Скидки</div>
-											<div class="course__item-popup-block-price">3.600 ₽</div>
-											<div class="course__item-popup-block-text">Многодетным семьям</div>
-										</div>
-										<div class="course__item-popup-block">
-											<div class="course__item-popup-block-title">Программа</div>	
-											<div class="course__item-popup-block-modul"><span>Модуль 1:</span> Введение в курс.</div>
-											<div class="course__item-popup-block-modul"><span>Модуль 2:</span> Основы курса.</div>	
-											<div class="course__item-popup-block-modul"><span>Модуль 3:</span> Окончание курса.</div>								
-										</div>
-										<div class="course__item-popup-logo-wrapper">
-											<img src="assets/images/roblox.png" class="course__item-popup-logo">
-											<div class="course__item-popup-logo-text">Roblox Studio</div>
+		
+									<div class="course__item-popup-wrapper" id="popup-01">
+										<div class="course__item-popup">
+											<div class="course__item-popup-info">Подробнее о курсе</div>
+											<div class="course__item-popup-decore"></div>
+											<div class="course__item-popup-block">
+												<div class="course__item-popup-block-title">Стоимость</div>
+												<div class="course__item-popup-block-price">4.000</div>
+												<div class="course__item-popup-block-text">В месяц</div>
+											</div>
+											<div class="course__item-popup-block">
+												<div class="course__item-popup-block-title">Скидки</div>
+												<div class="course__item-popup-block-price">3.600 ₽</div>
+												<div class="course__item-popup-block-text">Многодетным семьям</div>
+											</div>
+											<div class="course__item-popup-block">
+												<div class="course__item-popup-block-title">Программа</div>	
+												<div class="course__item-popup-block-modul"><span>Модуль 1:</span> Введение в курс.</div>
+												<div class="course__item-popup-block-modul"><span>Модуль 2:</span> Основы курса.</div>	
+												<div class="course__item-popup-block-modul"><span>Модуль 3:</span> Окончание курса.</div>								
+											</div>
+											<div class="course__item-popup-logo-wrapper">
+												<img src="assets/images/vscode.png" class="course__item-popup-logo">
+												<div class="course__item-popup-logo-text">Веб-разработка</div>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-	
-							<div class="course__item" onclick="coursePopup03()">
-								<div class="course__item-head">
-									<div class="course__item-head-icon-wrapper">
-										<img src="assets/images/blender.png" class="course__item-head-icon">
+		
+								<div class="course__item" onclick="coursePopup02()">
+									<div class="course__item-head">
+										<div class="course__item-head-icon-wrapper">
+											<img src="assets/images/roblox.png" class="course__item-head-icon">
+										</div>
+										<div class="course__item-head-title mb-small-title">Roblox Studio</div>
 									</div>
-									<div class="course__item-head-title">Blender</div>
-								</div>
-								<div class="course__item-text">3D моделирование на Blender</div>
-								<div class="course__item-bottom">
-									<div class="course__item-bottom-wrapper">
-										<div class="course__item-bottom-text">Длительность: 48 ч</div>
-										<div class="course__item-bottom-text">Возраст: 12-17 лет</div>
+									<div class="course__item-text">Разработка игр на Roblox.</div>
+									<div class="course__item-bottom">
+										<div class="course__item-bottom-wrapper">
+											<div class="course__item-bottom-text">Длительность: 48 ч</div>
+											<div class="course__item-bottom-text">Возраст: 7-12 лет</div>
+										</div>
+										<div class="course__item-bottom-arrow _icon-arrow"></div>
 									</div>
-									<div class="course__item-bottom-arrow _icon-arrow"></div>
-								</div>
-	
-								<div class="course__item-popup-wrapper" id="popup-03">
-									<div class="course__item-popup">
-										<div class="course__item-popup-info">Подробнее о курсе</div>
-										<div class="course__item-popup-decore"></div>
-										<div class="course__item-popup-block">
-											<div class="course__item-popup-block-title">Стоимость</div>
-											<div class="course__item-popup-block-price">4.000</div>
-											<div class="course__item-popup-block-text">В месяц</div>
-										</div>
-										<div class="course__item-popup-block">
-											<div class="course__item-popup-block-title">Скидки</div>
-											<div class="course__item-popup-block-price">3.600 ₽</div>
-											<div class="course__item-popup-block-text">Многодетным семьям</div>
-										</div>
-										<div class="course__item-popup-block">
-											<div class="course__item-popup-block-title">Программа</div>	
-											<div class="course__item-popup-block-modul"><span>Модуль 1:</span> Введение в курс.</div>
-											<div class="course__item-popup-block-modul"><span>Модуль 2:</span> Основы курса.</div>	
-											<div class="course__item-popup-block-modul"><span>Модуль 3:</span> Окончание курса.</div>								
-										</div>
-										<div class="course__item-popup-logo-wrapper">
-											<img src="assets/images/blender.png" class="course__item-popup-logo">
-											<div class="course__item-popup-logo-text">Blender</div>
+		
+									<div class="course__item-popup-wrapper" id="popup-02">
+										<div class="course__item-popup">
+											<div class="course__item-popup-info">Подробнее о курсе</div>
+											<div class="course__item-popup-decore"></div>
+											<div class="course__item-popup-block">
+												<div class="course__item-popup-block-title">Стоимость</div>
+												<div class="course__item-popup-block-price">4.000</div>
+												<div class="course__item-popup-block-text">В месяц</div>
+											</div>
+											<div class="course__item-popup-block">
+												<div class="course__item-popup-block-title">Скидки</div>
+												<div class="course__item-popup-block-price">3.600 ₽</div>
+												<div class="course__item-popup-block-text">Многодетным семьям</div>
+											</div>
+											<div class="course__item-popup-block">
+												<div class="course__item-popup-block-title">Программа</div>	
+												<div class="course__item-popup-block-modul"><span>Модуль 1:</span> Введение в курс.</div>
+												<div class="course__item-popup-block-modul"><span>Модуль 2:</span> Основы курса.</div>	
+												<div class="course__item-popup-block-modul"><span>Модуль 3:</span> Окончание курса.</div>								
+											</div>
+											<div class="course__item-popup-logo-wrapper">
+												<img src="assets/images/roblox.png" class="course__item-popup-logo">
+												<div class="course__item-popup-logo-text">Roblox Studio</div>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 	
-							<div class="course__item" onclick="coursePopup04()">
-								<div class="course__item-head">
-									<div class="course__item-head-icon-wrapper">
-										<img src="assets/images/unity.png" class="course__item-head-icon">
+							<div class="course__item-content-wrapper">
+								<div class="course__item" onclick="coursePopup03()">
+									<div class="course__item-head">
+										<div class="course__item-head-icon-wrapper">
+											<img src="assets/images/blender.png" class="course__item-head-icon">
+										</div>
+										<div class="course__item-head-title">Blender</div>
 									</div>
-									<div class="course__item-head-title">Unity</div>
-								</div>
-								<div class="course__item-text">Разработка игр на Unity.</div>
-								<div class="course__item-bottom">
-									<div class="course__item-bottom-wrapper">
-										<div class="course__item-bottom-text">Длительность: 48 ч</div>
-										<div class="course__item-bottom-text">Возраст: 12-17 лет</div>
+									<div class="course__item-text">3D моделирование на Blender</div>
+									<div class="course__item-bottom">
+										<div class="course__item-bottom-wrapper">
+											<div class="course__item-bottom-text">Длительность: 48 ч</div>
+											<div class="course__item-bottom-text">Возраст: 12-17 лет</div>
+										</div>
+										<div class="course__item-bottom-arrow _icon-arrow"></div>
 									</div>
-									<div class="course__item-bottom-arrow _icon-arrow"></div>
+		
+									<div class="course__item-popup-wrapper" id="popup-03">
+										<div class="course__item-popup">
+											<div class="course__item-popup-info">Подробнее о курсе</div>
+											<div class="course__item-popup-decore"></div>
+											<div class="course__item-popup-block">
+												<div class="course__item-popup-block-title">Стоимость</div>
+												<div class="course__item-popup-block-price">4.000</div>
+												<div class="course__item-popup-block-text">В месяц</div>
+											</div>
+											<div class="course__item-popup-block">
+												<div class="course__item-popup-block-title">Скидки</div>
+												<div class="course__item-popup-block-price">3.600 ₽</div>
+												<div class="course__item-popup-block-text">Многодетным семьям</div>
+											</div>
+											<div class="course__item-popup-block">
+												<div class="course__item-popup-block-title">Программа</div>	
+												<div class="course__item-popup-block-modul"><span>Модуль 1:</span> Введение в курс.</div>
+												<div class="course__item-popup-block-modul"><span>Модуль 2:</span> Основы курса.</div>	
+												<div class="course__item-popup-block-modul"><span>Модуль 3:</span> Окончание курса.</div>								
+											</div>
+											<div class="course__item-popup-logo-wrapper">
+												<img src="assets/images/blender.png" class="course__item-popup-logo">
+												<div class="course__item-popup-logo-text">Blender</div>
+											</div>
+										</div>
+									</div>
 								</div>
-	
-								<div class="course__item-popup-wrapper" id="popup-04">
-									<div class="course__item-popup">
-										<div class="course__item-popup-info">Подробнее о курсе</div>
-										<div class="course__item-popup-decore"></div>
-										<div class="course__item-popup-block">
-											<div class="course__item-popup-block-title">Стоимость</div>
-											<div class="course__item-popup-block-price">4.000</div>
-											<div class="course__item-popup-block-text">В месяц</div>
+		
+								<div class="course__item" onclick="coursePopup04()">
+									<div class="course__item-head">
+										<div class="course__item-head-icon-wrapper">
+											<img src="assets/images/unity.png" class="course__item-head-icon">
 										</div>
-										<div class="course__item-popup-block">
-											<div class="course__item-popup-block-title">Скидки</div>
-											<div class="course__item-popup-block-price">3.600 ₽</div>
-											<div class="course__item-popup-block-text">Многодетным семьям</div>
+										<div class="course__item-head-title">Unity</div>
+									</div>
+									<div class="course__item-text">Разработка игр на Unity.</div>
+									<div class="course__item-bottom">
+										<div class="course__item-bottom-wrapper">
+											<div class="course__item-bottom-text">Длительность: 48 ч</div>
+											<div class="course__item-bottom-text">Возраст: 12-17 лет</div>
 										</div>
-										<div class="course__item-popup-block">
-											<div class="course__item-popup-block-title">Программа</div>	
-											<div class="course__item-popup-block-modul"><span>Модуль 1:</span> Введение в курс.</div>
-											<div class="course__item-popup-block-modul"><span>Модуль 2:</span> Основы курса.</div>	
-											<div class="course__item-popup-block-modul"><span>Модуль 3:</span> Окончание курса.</div>								
-										</div>
-										<div class="course__item-popup-logo-wrapper">
-											<img src="assets/images/unity.png" class="course__item-popup-logo">
-											<div class="course__item-popup-logo-text">Unity</div>
+										<div class="course__item-bottom-arrow _icon-arrow"></div>
+									</div>
+		
+									<div class="course__item-popup-wrapper" id="popup-04">
+										<div class="course__item-popup">
+											<div class="course__item-popup-info">Подробнее о курсе</div>
+											<div class="course__item-popup-decore"></div>
+											<div class="course__item-popup-block">
+												<div class="course__item-popup-block-title">Стоимость</div>
+												<div class="course__item-popup-block-price">4.000</div>
+												<div class="course__item-popup-block-text">В месяц</div>
+											</div>
+											<div class="course__item-popup-block">
+												<div class="course__item-popup-block-title">Скидки</div>
+												<div class="course__item-popup-block-price">3.600 ₽</div>
+												<div class="course__item-popup-block-text">Многодетным семьям</div>
+											</div>
+											<div class="course__item-popup-block">
+												<div class="course__item-popup-block-title">Программа</div>	
+												<div class="course__item-popup-block-modul"><span>Модуль 1:</span> Введение в курс.</div>
+												<div class="course__item-popup-block-modul"><span>Модуль 2:</span> Основы курса.</div>	
+												<div class="course__item-popup-block-modul"><span>Модуль 3:</span> Окончание курса.</div>								
+											</div>
+											<div class="course__item-popup-logo-wrapper">
+												<img src="assets/images/unity.png" class="course__item-popup-logo">
+												<div class="course__item-popup-logo-text">Unity</div>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 	
-							<div class="course__item" onclick="coursePopup05()">
-								<div class="course__item-head">
-									<div class="course__item-head-icon-wrapper">
-										<img src="assets/images/figma.png" class="course__item-head-icon">
+							<div class="course__item-content-wrapper">
+								<div class="course__item" onclick="coursePopup05()">
+									<div class="course__item-head">
+										<div class="course__item-head-icon-wrapper">
+											<img src="assets/images/figma.png" class="course__item-head-icon">
+										</div>
+										<div class="course__item-head-title">Figma</div>
 									</div>
-									<div class="course__item-head-title">Figma</div>
-								</div>
-								<div class="course__item-text">Дизайн сайтов на Figma.</div>
-								<div class="course__item-bottom">
-									<div class="course__item-bottom-wrapper">
-										<div class="course__item-bottom-text">Длительность: 48 ч</div>
-										<div class="course__item-bottom-text">Возраст: 13-17 лет</div>
+									<div class="course__item-text">Дизайн сайтов на Figma.</div>
+									<div class="course__item-bottom">
+										<div class="course__item-bottom-wrapper">
+											<div class="course__item-bottom-text">Длительность: 48 ч</div>
+											<div class="course__item-bottom-text">Возраст: 13-17 лет</div>
+										</div>
+										<div class="course__item-bottom-arrow _icon-arrow"></div>
 									</div>
-									<div class="course__item-bottom-arrow _icon-arrow"></div>
-								</div>
-	
-								<div class="course__item-popup-wrapper" id="popup-05">
-									<div class="course__item-popup">
-										<div class="course__item-popup-info">Подробнее о курсе</div>
-										<div class="course__item-popup-decore"></div>
-										<div class="course__item-popup-block">
-											<div class="course__item-popup-block-title">Стоимость</div>
-											<div class="course__item-popup-block-price">4.000</div>
-											<div class="course__item-popup-block-text">В месяц</div>
-										</div>
-										<div class="course__item-popup-block">
-											<div class="course__item-popup-block-title">Скидки</div>
-											<div class="course__item-popup-block-price">3.600 ₽</div>
-											<div class="course__item-popup-block-text">Многодетным семьям</div>
-										</div>
-										<div class="course__item-popup-block">
-											<div class="course__item-popup-block-title">Программа</div>	
-											<div class="course__item-popup-block-modul"><span>Модуль 1:</span> Введение в курс.</div>
-											<div class="course__item-popup-block-modul"><span>Модуль 2:</span> Основы курса.</div>	
-											<div class="course__item-popup-block-modul"><span>Модуль 3:</span> Окончание курса.</div>								
-										</div>
-										<div class="course__item-popup-logo-wrapper">
-											<img src="assets/images/figma.png" class="course__item-popup-logo">
-											<div class="course__item-popup-logo-text">Figma</div>
+		
+									<div class="course__item-popup-wrapper" id="popup-05">
+										<div class="course__item-popup">
+											<div class="course__item-popup-info">Подробнее о курсе</div>
+											<div class="course__item-popup-decore"></div>
+											<div class="course__item-popup-block">
+												<div class="course__item-popup-block-title">Стоимость</div>
+												<div class="course__item-popup-block-price">4.000</div>
+												<div class="course__item-popup-block-text">В месяц</div>
+											</div>
+											<div class="course__item-popup-block">
+												<div class="course__item-popup-block-title">Скидки</div>
+												<div class="course__item-popup-block-price">3.600 ₽</div>
+												<div class="course__item-popup-block-text">Многодетным семьям</div>
+											</div>
+											<div class="course__item-popup-block">
+												<div class="course__item-popup-block-title">Программа</div>	
+												<div class="course__item-popup-block-modul"><span>Модуль 1:</span> Введение в курс.</div>
+												<div class="course__item-popup-block-modul"><span>Модуль 2:</span> Основы курса.</div>	
+												<div class="course__item-popup-block-modul"><span>Модуль 3:</span> Окончание курса.</div>								
+											</div>
+											<div class="course__item-popup-logo-wrapper">
+												<img src="assets/images/figma.png" class="course__item-popup-logo">
+												<div class="course__item-popup-logo-text">Figma</div>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -308,6 +316,7 @@
 		<div class="about__container _container">
 			<div class="about__body">
 				<div class="about__title heading">О нас</div>
+				<div class="about__title-mb title-mb">О нас</div>
 				<div class="about__content">
 					<div class="about__content-wrapper">
 						<div class="about__content-title">
@@ -356,6 +365,7 @@
 		<div class="gallery__container">
 			<div class="gallery__body">
 				<div class="gallery__title heading">Галерея</div>
+				<div class="gallery__title title-mb">Галерея</div>
 				<div class="gallery__head">
 					<div class="gallery__head-item active">3D моделирование</div>
 					<div class="gallery__head-item">Roblox</div>
@@ -416,6 +426,7 @@
 		<div class="market__container _container">
 			<div class="market__body">
 				<div class="market__title heading">Маркетплейс</div>
+				<div class="market__title title-mb">Маркетплейс</div>
 				<div class="market__item-content">
 					<div class="market__item-wrapper">
 						<a href="https://apps.apple.com/us/app/minecraft/id479516143" target="_blank" class="market__item">
@@ -455,6 +466,7 @@
 		<div class="prepods__container">
 			<div class="prepods__body">
 				<div class="prepods__title heading">Преподаватели</div>
+				<div class="prepods__title title-mb">Преподаватели</div>
 				<div class="prepods__item-wrapper">
 					<div class="prepods__item-track">
 						<div class="prepods__item-content">
@@ -515,6 +527,7 @@
 		<div class="comment__container">
 			<div class="comment__body">
 				<div class="comment__title heading">отзывы</div>
+				<div class="comment__title title-mb">отзывы</div>
 				<div class="comment__text">Мы учитываем ваши отзывы и становимся лучше для вас!</div>
 				<div class="comment__item-wrapper">
 					<div class="comment__item-track">
@@ -609,6 +622,7 @@
 		<div class="contact__container _container">
 			<div class="contact__body">
 				<div class="contact__title heading">Контакты</div>
+				<div class="contact__title title-mb">Контакты</div>
 				<div class="contact__content">
 					<div class="contact__block">
 						<div class="contact__info-wrapper">

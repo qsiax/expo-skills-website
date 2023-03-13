@@ -68,25 +68,8 @@ VanillaTilt.init(document.querySelectorAll(".home__content-wrapper"), {
     transition: true,
 });
 
-
+        
 // Clone Element Carousel
-function carouselCourse() {
-    let list = document.querySelector(".course__item-content");
-    let track = document.querySelector(".course__item-track");
-    let list2;
-  
-    const width = list.offsetWidth;
-  
-    function clone() {
-      list2 = list.cloneNode(true);
-      track.appendChild(list2);
-      list2.style.left = `${width + 62}px`;
-    }
-  
-    clone();
-  };
-  
-
 function carouselGallery() {
     let track = document.querySelectorAll(".gallery__item-wrapper");
     let list = document.querySelectorAll(".gallery__item-track");
@@ -97,7 +80,7 @@ function carouselGallery() {
     let list05;
 
     const width = list[0].offsetWidth;
-  
+
     function clone01() {
         list01 = list[0].cloneNode(true);
         track[0].appendChild(list01);
@@ -122,7 +105,7 @@ function carouselGallery() {
     //     list05 = list[4].cloneNode(true);
     //     track[4].appendChild(list05);
     //   }
-  
+
     clone01();
     // clone02();
     // clone03();
@@ -130,7 +113,6 @@ function carouselGallery() {
     // clone05();
 };
 
-  
 function carouselPrepods() {
     function cloneItem() {
         let list = document.querySelector(".prepods__item-content");
@@ -139,9 +121,9 @@ function carouselPrepods() {
 
         const width = list.offsetWidth;
 
-      list2 = list.cloneNode(true);
-      track.appendChild(list2);
-      list2.style.left = `${width + 25}px`;
+    list2 = list.cloneNode(true);
+    track.appendChild(list2);
+    list2.style.left = `${width + 25}px`;
     }
 
     function cloneUnderItem() {
@@ -151,32 +133,58 @@ function carouselPrepods() {
     
         const width = list.offsetWidth;
     
-          list2 = list.cloneNode(true);
-          track.appendChild(list2);
-          list2.style.left = `${width + 25}px`;
-      }
-  
+        list2 = list.cloneNode(true);
+        track.appendChild(list2);
+        list2.style.left = `${width + 25}px`;
+    }
+
     cloneItem();
     cloneUnderItem()
 };
 
-  function carouselComment() {
+function carouselComment() {
     let list = document.querySelector(".comment__item-block");
     let track = document.querySelector(".comment__item-track");
     let list2;
-  
+
     const width = list.offsetWidth;
-  
+
     function clone() {
-      list2 = list.cloneNode(true);
-      track.appendChild(list2);
-      list2.style.left = `${width + 25}px`;
+    list2 = list.cloneNode(true);
+    track.appendChild(list2);
+    list2.style.left = `${width + 25}px`;
     }
-  
+
     clone();
 };
-  
-  carouselCourse();
-  carouselGallery();
-  carouselPrepods();
-  carouselComment();
+
+carouselGallery();
+carouselPrepods();
+carouselComment();
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const widthS = window.innerWidth;
+    console.log(widthS)
+    if (widthS > 500){
+        
+        function carouselCourse() {
+            let list = document.querySelector(".course__item-content");
+            let track = document.querySelector(".course__item-track");
+            let list2;
+        
+            const width = list.offsetWidth;
+        
+            function clone() {
+            list2 = list.cloneNode(true);
+            track.appendChild(list2);
+            list2.style.left = `${width + 0}px`;
+            }
+        
+            clone();
+        };
+
+        
+        carouselCourse();
+
+    }
+  })
